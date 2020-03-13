@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.StackPane?>
+<?import java.lang.String?>
+<StackPane fx:id="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+    <styleClass>
+        <String fx:value="side-menu"/>
+    </styleClass>
+    <JFXListView fx:id="sideList">
+        <Label fx:id="button">按钮</Label>
+        <Label fx:id="checkbox">多选框</Label>
+        <Label fx:id="combobox">组合框</Label>
+        <Label fx:id="dialogs">弹出层</Label>
+        <Label fx:id="icons">图标</Label>
+        <Label fx:id="scrollpane">Header Scroll Pane</Label>
+        <Label fx:id="listview">列表</Label>
+        <Label fx:id="treetableview">树型表格</Label>
+        <Label fx:id="progressbar">进度条</Label>
+        <Label fx:id="radiobutton">单选按钮</Label>
+        <Label fx:id="slider">滑块</Label>
+        <Label fx:id="spinner">Spinner</Label>
+        <Label fx:id="textfield">输入框</Label>
+        <Label fx:id="highlighter">Highlighter</Label>
+        <Label fx:id="chipview">Chip View</Label>
+        <Label fx:id="togglebutton">切换按钮</Label>
+        <Label fx:id="popup">Popup</Label>
+        <Label fx:id="pickers">Pickers</Label>
+        <Label fx:id="svgLoader">SVG Loader</Label>
+        <Label fx:id="masonry">瀑布流</Label>
+        <Label fx:id="nodesList">Nodes List</Label>
+
+        <Label fx:id="lbl_login">[综合]登录</Label>
+    </JFXListView>
+</StackPane>

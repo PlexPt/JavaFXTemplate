@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXButton?>
+<StackPane fx:id="root" xmlns:fx="http://javafx.com/fxml/1"
+           stylesheets="@/css/views/login.css"
+           styleClass="login_panel"
+           alignment="TOP_CENTER"
+           xmlns="http://javafx.com/javafx/2.2">
+    <VBox styleClass="loginSubContainer"  prefWidth="400" spacing="50">
+        <HBox styleClass="input_row">
+            <Label>账号</Label>
+            <JFXTextField fx:id="txtAccount" promptText="请输入您的账号或者手机号码">
+                <validators>
+                    <RequiredFieldValidator message="请填写账号">
+                        <FontIcon iconLiteral="fas-exclamation-triangle"/>
+                    </RequiredFieldValidator>
+                </validators>
+            </JFXTextField>
+        </HBox>
+        <HBox styleClass="input_row">
+            <Label>密码</Label>
+            <JFXPasswordField fx:id="txtPwd" promptText="请输入您的密码">
+                <validators>
+                    <RequiredFieldValidator message="请输入密码！">
+                        <FontIcon iconLiteral="fas-exclamation-triangle"/>
+                    </RequiredFieldValidator>
+                </validators>
+            </JFXPasswordField>
+        </HBox>
+
+        <HBox styleClass="input_row">
+            <JFXButton text="登录" fx:id="btnLogin" styleClass="login_button"></JFXButton>
+        </HBox>
+    </VBox>
+</StackPane>
